@@ -1,9 +1,9 @@
-// Test alert function
+
 function showAlert() {
     alert("Hello, world!");
 }
 
-// Function to increase the text size
+
 function makeTextBigger() {
     const textArea = document.getElementById("textArea");
     textArea.style.fontSize = "24pt";
@@ -29,7 +29,7 @@ function toggleStyle() {
 function addMoo() {
     const textArea = document.getElementById("textArea");
     let sentences = textArea.value.split(".");
-    sentences = sentences.map(sentence => sentence.trim().toUpperCase() + "-Moo");
+    sentences = sentences.map(sentence => sentence.trim() + "-Moo");
     textArea.value = sentences.join(". ");
 }
 
